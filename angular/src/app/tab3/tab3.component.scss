@@ -1,0 +1,12 @@
+.appVersion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh; /* Adjust the height based on your layout requirements */
+  text-align: center;
+}
+
+.appVersion p {
+  margin: 0; /* Remove default paragraph margin */
+}

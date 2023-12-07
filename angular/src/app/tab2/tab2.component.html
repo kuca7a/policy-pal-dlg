@@ -1,0 +1,77 @@
+<ion-content [fullscreen]="true">
+  <div class="qr-container">
+    <qrcode
+      [qrdata]="qrDataCombined"
+      [allowEmptyString]="false"
+      [width]="400"
+    ></qrcode>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Full name" [(ngModel)]="qrName"></ion-input>
+      <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Phone number" [(ngModel)]="qrPhone"></ion-input>
+      <ion-icon name="call-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Email address" [(ngModel)]="qrEmail"></ion-input>
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        placeholder="Insurance provider"
+        [(ngModel)]="qrProvider"
+      ></ion-input>
+      <ion-icon name="business-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Cover type" [(ngModel)]="qrCover"></ion-input>
+      <ion-icon name="shield-checkmark-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        placeholder="Policy number"
+        [(ngModel)]="qrPolicyNumber"
+      ></ion-input>
+      <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        placeholder="Vehicle make"
+        [(ngModel)]="qrVehicleMake"
+      ></ion-input>
+      <ion-icon name="car-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        placeholder="Vehicle model"
+        [(ngModel)]="qrVehicleModel"
+      ></ion-input>
+      <ion-icon name="color-fill-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        placeholder="Registration Plate"
+        [(ngModel)]="qrRegPlate"
+      ></ion-input>
+      <ion-icon name="finger-print-outline" slot="start"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <div class="generateButton">
+    <ion-button class="generateQrButton" (click)="generateQrCode()"
+      >Generate QR Code</ion-button
+    >
+  </div>
+</ion-content>

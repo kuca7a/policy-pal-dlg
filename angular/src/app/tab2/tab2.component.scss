@@ -1,0 +1,17 @@
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+}
+
+.generateButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+ion-input {
+  caret-color: red !important; /* Replace 'red' with your desired color */
+}

@@ -1,0 +1,74 @@
+// .main-header {
+//   background-color: #ed576b;
+//   border-bottom: 1px solid #F9844A;
+//   padding: 5%;
+// }
+
+// ion-header.sticky-header {
+//   position: sticky;
+//   top: 0;
+//   background-color: #ed576b;
+//   border-bottom: 1px solid #F9844A;
+// }
+
+// .toolbar-container {
+//   background-color: #ed576b;
+// }
+
+.title-section {
+  padding: 5%;
+  margin-top: 5%;
+}
+
+.sub-title-section {
+  padding: 5%;
+}
+
+.header-button {
+  padding: 5%;
+}
+
+ion-card {
+  border: none;
+  background-color: white;
+  padding: auto;
+  width: auto;
+}
+
+ion-card-subtitle {
+  font-size: 24px;
+  color: black;
+}
+
+.how-it-works {
+  padding: 5%;
+}
+
+.main-content {
+  padding: 5%;
+}
+
+.notSpecial {
+  color: black;
+  text-transform: uppercase;
+}
+
+.customPrimaryButton {
+  --background: #161a1d;
+  --background-hover: #404446;
+  --background-activated: #d3d3d3;
+  --background-focused: #d3d3d3;
+  --color: #fff;
+}
+
+.customSecondaryButton {
+  --background: white;
+  --background-hover: #404446;
+  --background-activated: #d3d3d3;
+  --background-focused: #d3d3d3;
+  --color: black;
+}
+
+.menu-item {
+  color: black;
+}

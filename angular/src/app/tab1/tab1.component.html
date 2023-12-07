@@ -1,0 +1,166 @@
+<ion-content>
+  <ion-menu side="end" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="main-header">Policy Pal</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding menu-content">
+      <ion-list class="menu-list">
+        <ion-item class="menu-item"> Home </ion-item>
+        <ion-item class="menu-item"> About </ion-item>
+        <ion-item class="menu-item"> Log in </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header class="sticky-header">
+      <ion-toolbar>
+        <ion-title><ion-icon name="expand-outline"></ion-icon></ion-title>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+  <div class="title-section">
+    <h1>Welcome to Policy Pal</h1>
+    <p>
+      Your trusted companion for accident documentation and insurance
+      information exchange.
+    </p>
+  </div>
+
+  <div class="sub-title-section">
+    <h1>Simplifying accident documentation</h1>
+    <p>
+      Policy Pal is your trusted companion for accident documentation and
+      insurance information exchange. Be prepared for unexpected incidents with
+      our quick and secure QR code solution.
+    </p>
+  </div>
+
+  <div class="header-button">
+    <!-- <ion-button
+        class="customPrimaryButton"
+        (mouseover)="changeStartedIcon()"
+        (mouseout)="resetStartedIcon()"
+        >Get started<ion-icon
+          [name]="currentStartedIcon"
+          slot="end"
+          name="chevron-forward-outline"
+        ></ion-icon
+      ></ion-button> -->
+
+    <!-- <ion-button
+        class="customSecondaryButton"
+        (mouseover)="changeSupportIcon()"
+        (mouseout)="resetSupportIcon()"
+        >Support<ion-icon
+          [name]="currentSupportIcon"
+          slot="end"
+          name="chevron-forward-outline"
+        ></ion-icon
+      ></ion-button> -->
+  </div>
+
+  <div class="how-it-works">
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col
+          >To get started with Policy Pal, the first step is to sign up for an
+          account. During the registration process, you'll need to provide your
+          email address and create a secure password. Don't forget to review and
+          agree to the terms and conditions. After completing these steps, tap
+          "Sign Up" to create your account.</ion-col
+        >
+        <ion-col>IMAGE GOES HERE</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>IMAGE GOES HERE</ion-col>
+        <ion-col
+          >If you already have an account, you can easily log in. Open the app
+          and select "Log In." Enter your registered email address and the
+          password associated with your account, and then tap "Log In" to access
+          your account.</ion-col
+        >
+      </ion-row>
+
+      <ion-row>
+        <ion-col
+          >Upon logging in, you'll be prompted to provide your personal details.
+          This includes your full name, contact information, and insurance
+          details. It's essential to input accurate and up-to-date information
+          to ensure the smooth exchange of insurance details in the event of an
+          accident.</ion-col
+        >
+        <ion-col>IMAGE GOES HERE</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>IMAGE GOES HERE</ion-col>
+        <ion-col
+          >Now that you've entered your personal details, you can generate your
+          QR code for sharing. From the app's main screen, you'll find an option
+          that says "Show QR Code." Tapping on this option will generate your
+          personalized QR code, which contains your insurance information.
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col
+          >To share your QR code, all you need to do is display it on your
+          device's screen to the other party involved in the accident. They can
+          then scan your QR code with their device to securely receive your
+          insurance details.
+        </ion-col>
+        <ion-col>IMAGE GOES HERE</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="main-content">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="notSpecial"
+          >Why choose Policy Pal?</ion-card-title
+        >
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-card-subtitle>Simplify the Process</ion-card-subtitle><br />
+        Say goodbye to the hassle of scribbling down insurance information on a
+        scrap of paper or trying to remember details under stress. With our
+        user-friendly app, you can quickly and securely exchange insurance
+        details using QR codes.
+      </ion-card-content>
+
+      <ion-card-content>
+        <ion-card-subtitle>Quick and Secure</ion-card-subtitle><br />
+        Our platform ensures that your information is shared securely,
+        safeguarding your privacy and reducing the chances of errors or
+        misunderstandings during the exchange. Trust in Policy Pal for a
+        seamless and safe experience.
+      </ion-card-content>
+
+      <ion-card-content>
+        <ion-card-subtitle>24/7 Accessibility</ion-card-subtitle><br />
+        Accidents can happen at any time, so we're here for you around the
+        clock. Whether you're involved in an accident in the middle of the night
+        or during the day, Policy Pal is available to help you exchange
+        insurance details whenever you need it.
+      </ion-card-content>
+
+      <ion-card-content>
+        <ion-card-subtitle>Free and Easy to Use</ion-card-subtitle><br />
+        We believe that making your life easier during a difficult time
+        shouldn't come at a cost. That's why Policy Pal is completely free to
+        use. No subscriptions, no hidden fees – just a reliable tool to simplify
+        your post-accident process.
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
