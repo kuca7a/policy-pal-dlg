@@ -25,3 +25,51 @@
 #container a {
   text-decoration: none;
 }
+
+.header01 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header02 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.paragraph01 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.header-background {
+  --background: linear-gradient(to bottom, #e70c2c, #ad0921);
+  color: #222222;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-login-button {
+  margin-top: auto;
+  margin-bottom: 10vh;
+}
+
+.landing-form {
+  margin-top: 70vh;
+}
+
+.landing-text {
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+}

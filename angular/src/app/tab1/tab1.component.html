@@ -1,19 +1,19 @@
 <ion-content>
-  <ion-menu side="end" contentId="main-content">
+  <!-- <ion-menu side="end" contentId="main-content">
     <ion-header>
       <ion-toolbar>
-        <ion-title class="main-header">Policy Pal</ion-title>
+        <ion-title class="header01">Policy Pal</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding menu-content">
       <ion-list class="menu-list">
-        <ion-item class="menu-item"> Home </ion-item>
-        <ion-item class="menu-item"> About </ion-item>
-        <ion-item class="menu-item"> Log in </ion-item>
+        <ion-item class="paragraph01"> Home </ion-item>
+        <ion-item class="paragraph01"> About </ion-item>
+        <ion-item class="paragraph01"> Settings </ion-item>
       </ion-list>
     </ion-content>
-  </ion-menu>
-
+  </ion-menu> -->
+  <!-- 
   <div class="ion-page" id="main-content">
     <ion-header class="sticky-header">
       <ion-toolbar>
@@ -23,19 +23,19 @@
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
-  </div>
+  </div> -->
 
   <div class="title-section">
-    <h1>Welcome to Policy Pal</h1>
-    <p>
+    <h1 class="header02">Welcome to Policy Pal</h1>
+    <p class="paragraph01">
       Your trusted companion for accident documentation and insurance
       information exchange.
     </p>
   </div>
 
   <div class="sub-title-section">
-    <h1>Simplifying accident documentation</h1>
-    <p>
+    <h1 class="header02">Simplifying accident documentation</h1>
+    <p class="paragraph01">
       Policy Pal is your trusted companion for accident documentation and
       insurance information exchange. Be prepared for unexpected incidents with
       our quick and secure QR code solution.
@@ -69,19 +69,28 @@
   <div class="how-it-works">
     <ion-grid [fixed]="true">
       <ion-row>
-        <ion-col
+        <ion-col class="paragraph01"
           >To get started with Policy Pal, the first step is to sign up for an
           account. During the registration process, you'll need to provide your
           email address and create a secure password. Don't forget to review and
           agree to the terms and conditions. After completing these steps, tap
           "Sign Up" to create your account.</ion-col
         >
-        <ion-col>IMAGE GOES HERE</ion-col>
+        <ion-col>
+          <img
+            class="center-image-step1"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFPUlEQVR4nO1bX1MbVRRfn/TFD+GMT46P+g0U6/gZHJ9lbxhtdOzoTB1bwwC7NyVg6Z+Ee0MIoaApTOGhhWmhlT8hSC210BYJttOBQAFxOkppanucs9mNELLJJtklIdkz8xuWs3fvOee35569mblHEGyxRqRP2btUZEFK+LJMeAL/4v9u0feOUMkCArwii/ykTNhLSjikQ9GL7IRQqUJFfhwDddf5IXT+OgyPLMLo9AoMjSxC19lRcDv8SSJE/o1QaSLV+d6mIn9OHRwu9c/CjZn4PlzqmwVK/IDLQnK0vyVUksgiO49vt/P0tYzBa+j84aqWBWeFShJK+AMM7MrVhawEXB5eUAlgfwjlKhLxfygT3i+LfFWvoGWC29EB139ZyUoA3sdxRudE++gHFVkfreVHLA3820/4a1TkIaPOpaO9YTBr8Bp8DYMFza9AZEH00xICZMK70Eirk8FUbxts3vLAs8VT8CyWhOaEkSALhWZDs4n20Y9ITxu0HGVa/eg0PXhay49owa9MtfzvQKzEBOzCcqQlRYLb4a8xlwCR9eHEU71nFGPxaQ8Ev/eCu25/Gh4EAam6Usehy+WD1WjypUR629SlwMPmEkDYGk6spH3slBK83jrUnJ24tQrT8+swc38TbhYAfG56fgPGZ9d0CdDQ5fIqfm386lF1LG4uASJ/gRPvqGtee/Pb64uQ2FpSsJuAqTuPCwpaD5Hf1vcQoNlE+1omoF/on5oBLzLFIYvsA0r4ECV8XcWQoeVC09ZeuiOI1qMBRTc68cDU4DWMTD5U5m91BvbY1fMtQwyS7udUZE1FE9B3ekDRdTRfhqnbcVODx/kC7ivK/P1tA3kTINXyj1HX7GAvx51eWP7qnIIxp0/R4T0cUxQB67F5aFGzwCpglm3E5vImgIrsLuqiX3hh89i5PYg61XomsrtFEZDYWoLHv8/Bj8394PnM+G7OCHA+nBfnT7dpiABVt5EWPAJ1essmbwJKgXwISA9eQ0UTQEU+bjTTZJGNVR4BJL/lVrEE3MzxpbEJIHYGgL0ESJE1INQYzllkQk3hnM+kjzk0RbBbupjTAI7J9Uz6mCIJ+Nn4Z5DfqLivAIqmc03vZERFb4RQbALIAWVASKcIml34yjYDunWKoNmFr2wJSNg1YOlQFEHpuwGQTgxUbwZQnf8tK4LUwsJYVgR0G9gJml0Yy4qAxCFZAtLJQQVVS4DL/gzu2PsAVzVvhCR7H8Cr+ytAbQK4nQHUXgK8CmtAdBsaLtxLjcFrV/Rp9RAgfb3/B5d8rLd6CKB4YPM4h9vDTAFe775XFAGhxnDGn7hW6wwSEEVd0MUhsdIOz9eSwGvUqc9EiyKAlliX9YwQCbwhE7aB+okwSxGA18nx7E9a632zYAKert5J6bbuXUvBKh3ay4cAFFlk78uE/et2cFgYYxCbZIDXeKROIvwj3eBzEfD3oxnFuWB9NwTrQ3sctlL3z6OZvAhAwW4UvNfqTMJwhwrVMYJvYreDB43t1bm8CFD6lgjrSRU+kfWhrmACnixNlJSAJ0uTeRGA0vil73VKeASB1zmDz3ZUdnOudMEj/ro/ktdR2YJFxq6MXYel8YR2+oaiFOhqCh/MYWmZsIs4MTYmoCE8no5GMx2XP0iE6r2KH9px+ckLyePyMmE/mUqA2+GvwYmxIQEbE7T1Vk5QGiY+VxsmSPt7gtlCCQtoJEQytMyUBIvJtJ/sOZMKXhZZh2CFeByeV7Efp9TrPjtYAP0UrBS3w1+TrAksnk/bnBVI2mdxbJExvU9IqHL5D4VzmnE+G4UCAAAAAElFTkSuQmCC"
+          />
+        </ion-col>
       </ion-row>
 
       <ion-row>
-        <ion-col>IMAGE GOES HERE</ion-col>
         <ion-col
+          ><img
+            class="center-image-step2"
+            src="data:image/png;base64,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"
+        /></ion-col>
+        <ion-col class="paragraph01"
           >If you already have an account, you can easily log in. Open the app
           and select "Log In." Enter your registered email address and the
           password associated with your account, and then tap "Log In" to access
@@ -90,19 +99,28 @@
       </ion-row>
 
       <ion-row>
-        <ion-col
+        <ion-col class="paragraph01"
           >Upon logging in, you'll be prompted to provide your personal details.
           This includes your full name, contact information, and insurance
           details. It's essential to input accurate and up-to-date information
           to ensure the smooth exchange of insurance details in the event of an
           accident.</ion-col
         >
-        <ion-col>IMAGE GOES HERE</ion-col>
+        <ion-col>
+          <img
+            class="center-image-step3"
+            src="assets/images/icons8-todo-list.gif"
+          />
+        </ion-col>
       </ion-row>
 
       <ion-row>
-        <ion-col>IMAGE GOES HERE</ion-col>
         <ion-col
+          ><img
+            class="center-image-step4"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1UlEQVR4nO2bQW/aMBSAOfXPwh9gncSxZZBT0SqxCcppwLEqqNdVgsnKzkNaD80EYZepY7tMGhqeXoUzY+zYJs8h6WLpHUiI7ff5vefnPCiVila0ohWtaEXba7Xa8MQrd+rNcmfpVbo0pxI2K91z0KVk25qV7nkGFEAR0MUagFfphvDwLQnpZPHbuZDlmgarDb3/vqHTcP++/3VNgx+Uzn/qZfbtz9Mztx8WkSUcAoCC5FV5JkyPzAIgTPlHtfJfDJX/JCifeQDE4cqz/tEB3Lx/oBfVvjbwtKoDOroLoufaZzd73+k1xpHy/P12fRQpT/w5fX06sB4PlH9YbfABtKr6yTC5eDHYM0VR2MqD0uza2/ooWvnL06H1eEx5eB4dgLe9Tn+tYkV8nn1mZq/qXzR72/F45TMJINj6vKx/mc/bjscrnwqAd43r6Frfu9YCMJFec6wEoBtPDI7OAXjC5GUAwCwh4NlAUAHQjZc5AESx1bH7Kp/PDYC+F2+Sqn0+uq/weRUA3XipA6CaoMTv87DVif2oJnxoEMwcgOl25fn+wOwh0PHBLjcAWhaJUEuSCIk+33s1UgZBSG9txrt8OXQPYHQXGE0KlN9JheujnQxPnCAvYBkstzcdD5T3Py7cA5ggH2xkpqs62IhJjomkAoAkONWJADCVdwKgLZzaTJVX+bro8zrl4/qJC6p4AOr/JvAGfNpw5eOU531et/LwXR3IVFyACCsvPe9LcnqZmfLK6/rRmXoqAIjE7HUropqg6h2ebmWPBoAY5vYmAGRmbwruKADIck2vuCAkS21Fn7eN9pkFQLYrf8Uda2UAXImoWFwGiQ6AGGx1uuicROK2N+cACNKr67iYInuHZ2vyzgAESO/tVTFF9Q4vMwDuhYoNv0/zpinzSXYfKjamJi4qossgnbvANFRngjsAJDEArrFyFf9c3MRVn5PGioMBTJBrdTqfNzVtE/n8iFwZ8hFqdTqfxwLAXBcNgI9Uq9Pt34eaPPTLPvNxCwWAz608Vq0OA4DsOTFoJwbgO6rVJXUB1fdUr98PBhA4qtVhA4AUnU/N0QDMFQMnrdXZukAcAIj2skQtFQCeMFEdAFW+YHpf5/OZBzBHEpmVHMUF+pa1OpcAQFIHQA1LVfw+nfQamL2ocOYBeJL+DrkmZnipApglqNVhAJBleKm5wCxhrU5WDba51m2Md4/lktOlsyA4Qy5X2Ypuq4uTxABmOVYe7TA0yanySQGE8CD85PwYyselt6aS6OfyzWf0hwmv3DmzBlCrDU+2EJ4s4b/7y0zRila0ohWt9PzbX0znXHOZbbRSAAAAAElFTkSuQmCC"
+        /></ion-col>
+        <ion-col class="paragraph01"
           >Now that you've entered your personal details, you can generate your
           QR code for sharing. From the app's main screen, you'll find an option
           that says "Show QR Code." Tapping on this option will generate your
@@ -111,13 +129,17 @@
       </ion-row>
 
       <ion-row>
-        <ion-col
+        <ion-col class="paragraph01"
           >To share your QR code, all you need to do is display it on your
           device's screen to the other party involved in the accident. They can
           then scan your QR code with their device to securely receive your
           insurance details.
         </ion-col>
-        <ion-col>IMAGE GOES HERE</ion-col>
+        <ion-col
+          ><img
+            class="center-image-step5"
+            src="assets/images/icons8-approval.gif"
+        /></ion-col>
       </ion-row>
     </ion-grid>
   </div>
@@ -125,41 +147,54 @@
   <div class="main-content">
     <ion-card>
       <ion-card-header>
-        <ion-card-title class="notSpecial"
-          >Why choose Policy Pal?</ion-card-title
-        >
+        <ion-card-title class="header02">Why choose Policy Pal?</ion-card-title>
       </ion-card-header>
 
       <ion-card-content>
-        <ion-card-subtitle>Simplify the Process</ion-card-subtitle><br />
-        Say goodbye to the hassle of scribbling down insurance information on a
-        scrap of paper or trying to remember details under stress. With our
-        user-friendly app, you can quickly and securely exchange insurance
-        details using QR codes.
+        <ion-card-subtitle class="header02"
+          >Simplify the Process</ion-card-subtitle
+        ><br />
+        <p class="paragraph01">
+          Say goodbye to the hassle of scribbling down insurance information on
+          a scrap of paper or trying to remember details under stress. With our
+          user-friendly app, you can quickly and securely exchange insurance
+          details using QR codes.
+        </p>
       </ion-card-content>
 
       <ion-card-content>
-        <ion-card-subtitle>Quick and Secure</ion-card-subtitle><br />
-        Our platform ensures that your information is shared securely,
-        safeguarding your privacy and reducing the chances of errors or
-        misunderstandings during the exchange. Trust in Policy Pal for a
-        seamless and safe experience.
+        <ion-card-subtitle class="header02">Quick and Secure</ion-card-subtitle
+        ><br />
+        <p class="paragraph01">
+          Our platform ensures that your information is shared securely,
+          safeguarding your privacy and reducing the chances of errors or
+          misunderstandings during the exchange. Trust in Policy Pal for a
+          seamless and safe experience.
+        </p>
       </ion-card-content>
 
       <ion-card-content>
-        <ion-card-subtitle>24/7 Accessibility</ion-card-subtitle><br />
-        Accidents can happen at any time, so we're here for you around the
-        clock. Whether you're involved in an accident in the middle of the night
-        or during the day, Policy Pal is available to help you exchange
-        insurance details whenever you need it.
+        <ion-card-subtitle class="header02"
+          >24/7 Accessibility</ion-card-subtitle
+        ><br />
+        <p class="paragraph01">
+          Accidents can happen at any time, so we're here for you around the
+          clock. Whether you're involved in an accident in the middle of the
+          night or during the day, Policy Pal is available to help you exchange
+          insurance details whenever you need it.
+        </p>
       </ion-card-content>
 
       <ion-card-content>
-        <ion-card-subtitle>Free and Easy to Use</ion-card-subtitle><br />
-        We believe that making your life easier during a difficult time
-        shouldn't come at a cost. That's why Policy Pal is completely free to
-        use. No subscriptions, no hidden fees – just a reliable tool to simplify
-        your post-accident process.
+        <ion-card-subtitle class="header02"
+          >Free and Easy to Use</ion-card-subtitle
+        ><br />
+        <p class="paragraph01">
+          We believe that making your life easier during a difficult time
+          shouldn't come at a cost. That's why Policy Pal is completely free to
+          use. No subscriptions, no hidden fees – just a reliable tool to
+          simplify your post-accident process.
+        </p>
       </ion-card-content>
     </ion-card>
   </div>

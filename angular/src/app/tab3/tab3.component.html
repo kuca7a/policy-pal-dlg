@@ -1,9 +1,3 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Settings </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true" color="light">
   <ion-list [inset]="true">
     <ion-item detail="true">
@@ -14,9 +8,9 @@
             slot="start"
             style="font-size: 24px"
           ></ion-icon>
-          <div style="margin-left: 10px">
-            <h3>Personal information</h3>
-            <p>Edit your profile!</p>
+          <div style="margin-left: 10px" p class="paragraph01">
+            <p>Personal information</p>
+            <p>Edit your profile</p>
           </div>
         </div>
       </ion-label>
@@ -30,8 +24,8 @@
             slot="start"
             style="font-size: 24px"
           ></ion-icon>
-          <div style="margin-left: 10px">
-            <h3>Notifications</h3>
+          <div style="margin-left: 10px" p class="paragraph01">
+            <p>Notifications</p>
             <p>Off</p>
           </div>
         </div>
@@ -46,8 +40,8 @@
             slot="start"
             style="font-size: 24px"
           ></ion-icon>
-          <div style="margin-left: 10px">
-            <h3>Language</h3>
+          <div style="margin-left: 10px" p class="paragraph01">
+            <p>Language</p>
             <p>English (UK)</p>
           </div>
         </div>
@@ -65,7 +59,7 @@
             style="font-size: 24px"
           ></ion-icon>
           <div style="margin-left: 10px">
-            <h3>Privacy & Security</h3>
+            <p class="paragraph01">Privacy & Security</p>
           </div>
         </div>
       </ion-label>
@@ -80,7 +74,7 @@
             style="font-size: 24px"
           ></ion-icon>
           <div style="margin-left: 10px">
-            <h3>Help</h3>
+            <p class="paragraph01">Help</p>
           </div>
         </div>
       </ion-label>
@@ -95,7 +89,7 @@
             style="font-size: 24px"
           ></ion-icon>
           <div style="margin-left: 10px">
-            <h3>About</h3>
+            <p class="paragraph01">About</p>
           </div>
         </div>
       </ion-label>
@@ -105,8 +99,7 @@
   <ion-list [inset]="true">
     <ion-item detail="true">
       <ion-label>
-        <h3>Log out</h3>
-        <p></p>
+        <p class="paragraph01">Log out</p>
       </ion-label>
     </ion-item>
   </ion-list>
@@ -115,7 +108,7 @@
 
   <app-logout-button></app-logout-button>
 
-  <div class="appVersion">
+  <div class="paragraph01">
     <p>Version 1.1.3</p>
     <p>Copyright © 2023 PolicyPal Inc.</p>
     <p>All rights reserved.</p>

@@ -1,23 +1,5 @@
-// .main-header {
-//   background-color: #ed576b;
-//   border-bottom: 1px solid #F9844A;
-//   padding: 5%;
-// }
-
-// ion-header.sticky-header {
-//   position: sticky;
-//   top: 0;
-//   background-color: #ed576b;
-//   border-bottom: 1px solid #F9844A;
-// }
-
-// .toolbar-container {
-//   background-color: #ed576b;
-// }
-
 .title-section {
   padding: 5%;
-  margin-top: 5%;
 }
 
 .sub-title-section {
@@ -71,4 +53,47 @@ ion-card-subtitle {
 
 .menu-item {
   color: black;
+}
+
+.header01 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header02 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.paragraph01 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.center-image-step1 {
+  padding-left: 6vh;
+  padding-top: 8vh;
+}
+
+.center-image-step2 {
+  padding-left: 6vh;
+  padding-top: 6vh;
+}
+
+.center-image-step3 {
+  padding-left: 6vh;
+  padding-top: 8vh;
+}
+
+.center-image-step4 {
+  padding-left: 6vh;
+  padding-top: 8vh;
+}
+
+.center-image-step5 {
+  padding-left: 6vh;
+  padding-top: 6vh;
 }

@@ -1,17 +1,26 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Auth0 Sample </ion-title>
+  <ion-toolbar class="header-background">
+    <ion-title class="header01"> Policy Pal </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Auth0 Sample</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
+    <div class="landing-form">
+      <div class="landing-text">
+        <div class="home-image">
+          <!-- <img
+            src="data:image/png;base64,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"
+          /> -->
+        </div>
+        <ion-text>
+          <h2 class="header02">Seamless policy sharing</h2>
+          <p class="paragraph01">
+            Instant car insurance detail exchange with Policy Pal
+          </p>
+        </ion-text>
+      </div>
+    </div>
     <app-login-button
       *ngIf="(auth.isAuthenticated$ | async) === false"
     ></app-login-button>
